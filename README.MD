@@ -1,11 +1,6 @@
-# [Waiting4<3](https://dacsang97.github.io/waiting-m2love/#/) Project
+# [MLove](https://dacsang97.github.io/mlove/#/) Project
 
-> A NextJS Project - Waiting for Love
-
-## Tutorial
-
-* English
-* [Vietnamese](https://github.com/dacsang97/waiting-m2love/blob/master/HUONGDAN.MD)
+> A Valentine project for my love
 
 ## Build Setup
 
@@ -18,36 +13,35 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
-## Custom your content
+## Custom your message
 
 1. Music
+   Change iframe of your music at line 3 in `src/App.vue`
 
-Change iframe of your music at line 12 in `pages/index.js`
-
-```html
-<iframe
-  width="0"
-  height="0"
-  src="https://www.youtube.com/embed/gphA89W5xdQ?autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"
-  frameBorder="0"
-  allow=""
-  allowFullScreen
-/>
+```
+<iframe width="0" height="0" src="https://www.youtube.com/embed/taNXwSP7Zqs?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=true" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ```
 
-> You MUST set width & height of the iframe to 0.
+> Recommend set width & height of the iframe to 0.
 
-2. Star content
+2. Envelope message
+   Change at line 39 in `src/components/Envelope.vue`
 
-Update your content in `src/content.js`
+```
+msg: "I love Mun",
+```
 
-```javascript
-export default [
-  "M2Love",
-  ...,
-]
+3. Valentine card title, message
+   Change at line 37, 38 in `src/components/ValentineCard.vue`
+
+```
+title: "M ❤ M",
+msg: "Happy Valentines Day"
 ```
 
 ## Contact
